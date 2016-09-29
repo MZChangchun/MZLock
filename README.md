@@ -33,4 +33,5 @@
  当然还有删除密码功能，这个其实和解锁功能的逻辑一样，使用解锁类型即可
 
 
- 
+![image](https://github.com/MZChangchun/MZLock/blob/master/1.png)
+![image](https://github.com/MZChangchun/MZLock/blob/master/2.png)
