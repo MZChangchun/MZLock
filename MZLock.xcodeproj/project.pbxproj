@@ -17,6 +17,10 @@
 		3970E17E1D9CABFF00B443C5 /* MZLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3970E17C1D9CABFF00B443C5 /* MZLockViewController.m */; };
 		3970E1821D9CAC0F00B443C5 /* LockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3970E1801D9CAC0F00B443C5 /* LockViewController.m */; };
 		3970E1831D9CAC0F00B443C5 /* LockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3970E1811D9CAC0F00B443C5 /* LockViewController.xib */; };
+		399729F41DBF0165001A34D8 /* TouchIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 399729EE1DBF0165001A34D8 /* TouchIDManager.m */; };
+		399729F51DBF0165001A34D8 /* TouchIDResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 399729F01DBF0165001A34D8 /* TouchIDResult.m */; };
+		399729F61DBF0165001A34D8 /* TouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 399729F21DBF0165001A34D8 /* TouchIDViewController.m */; };
+		399729F71DBF0165001A34D8 /* TouchIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 399729F31DBF0165001A34D8 /* TouchIDViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,13 @@
 		3970E17F1D9CAC0F00B443C5 /* LockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockViewController.h; sourceTree = "<group>"; };
 		3970E1801D9CAC0F00B443C5 /* LockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockViewController.m; sourceTree = "<group>"; };
 		3970E1811D9CAC0F00B443C5 /* LockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LockViewController.xib; sourceTree = "<group>"; };
+		399729ED1DBF0165001A34D8 /* TouchIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDManager.h; sourceTree = "<group>"; };
+		399729EE1DBF0165001A34D8 /* TouchIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDManager.m; sourceTree = "<group>"; };
+		399729EF1DBF0165001A34D8 /* TouchIDResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDResult.h; sourceTree = "<group>"; };
+		399729F01DBF0165001A34D8 /* TouchIDResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDResult.m; sourceTree = "<group>"; };
+		399729F11DBF0165001A34D8 /* TouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDViewController.h; sourceTree = "<group>"; };
+		399729F21DBF0165001A34D8 /* TouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDViewController.m; sourceTree = "<group>"; };
+		399729F31DBF0165001A34D8 /* TouchIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchIDViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				3970E1781D9CABFF00B443C5 /* MZLockViewController */,
+				399729EC1DBF0155001A34D8 /* TouchID */,
 				3970E1641D9CAB8800B443C5 /* AppDelegate.h */,
 				3970E1651D9CAB8800B443C5 /* AppDelegate.m */,
 				3970E1671D9CAB8800B443C5 /* ViewController.h */,
@@ -103,6 +115,20 @@
 				3970E17C1D9CABFF00B443C5 /* MZLockViewController.m */,
 			);
 			path = MZLockViewController;
+			sourceTree = "<group>";
+		};
+		399729EC1DBF0155001A34D8 /* TouchID */ = {
+			isa = PBXGroup;
+			children = (
+				399729ED1DBF0165001A34D8 /* TouchIDManager.h */,
+				399729EE1DBF0165001A34D8 /* TouchIDManager.m */,
+				399729EF1DBF0165001A34D8 /* TouchIDResult.h */,
+				399729F01DBF0165001A34D8 /* TouchIDResult.m */,
+				399729F11DBF0165001A34D8 /* TouchIDViewController.h */,
+				399729F21DBF0165001A34D8 /* TouchIDViewController.m */,
+				399729F31DBF0165001A34D8 /* TouchIDViewController.xib */,
+			);
+			name = TouchID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3970E1711D9CAB8900B443C5 /* LaunchScreen.storyboard in Resources */,
+				399729F71DBF0165001A34D8 /* TouchIDViewController.xib in Resources */,
 				3970E16E1D9CAB8900B443C5 /* Assets.xcassets in Resources */,
 				3970E16C1D9CAB8800B443C5 /* Main.storyboard in Resources */,
 				3970E1831D9CAC0F00B443C5 /* LockViewController.xib in Resources */,
@@ -179,9 +206,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3970E1691D9CAB8800B443C5 /* ViewController.m in Sources */,
+				399729F51DBF0165001A34D8 /* TouchIDResult.m in Sources */,
 				3970E1821D9CAC0F00B443C5 /* LockViewController.m in Sources */,
+				399729F41DBF0165001A34D8 /* TouchIDManager.m in Sources */,
 				3970E1661D9CAB8800B443C5 /* AppDelegate.m in Sources */,
 				3970E17D1D9CABFF00B443C5 /* MZLockView.m in Sources */,
+				399729F61DBF0165001A34D8 /* TouchIDViewController.m in Sources */,
 				3970E17E1D9CABFF00B443C5 /* MZLockViewController.m in Sources */,
 				3970E1631D9CAB8800B443C5 /* main.m in Sources */,
 			);
@@ -340,6 +370,7 @@
 				3970E1771D9CAB8900B443C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
