@@ -1,6 +1,8 @@
 # MZLock
-#九宫格加锁解锁控制器
+## 1.九宫格加锁解锁控制器 
+ 文件夹 `DrawLock`
  导入入头文件`#import "MZLockViewController.h"`
+ 将文件夹 `View`里面的图片加入到 `Assets` 里面，当然你也可以使用自己的图片
  
  添加代理`MZLockViewControllerDelegate`
  
@@ -35,3 +37,26 @@
 
 ![image](https://github.com/MZChangchun/MZLock/blob/master/1.png)
 ![image](https://github.com/MZChangchun/MZLock/blob/master/2.png)
+
+## 2.TouchID
+引入`“LocalAuthentication”`这个库
+文件夹`TouchIDLock`
+导入 `#import "TouchIDManager.h"`
+使用block
+```
+TouchIDManager * manger = [TouchIDManager new];
+    [manger touchIDChecken:^(TouchIDResult *result) {
+        if (result.resultSuccess) {
+                            NSLog(@"验证通过");
+                        } else {
+                            NSLog(@"%@", result.reason);
+                        }
+    }];
+```
+    有木有比代理更简单啊！
+    
+## 3.数字密码盘
+仿iOS解锁界面
+导入库`AudioToolBox.framework `震动使用
+导入头文件`#import "NumberCipherViewController.h"`
+使用方法和 `1.九宫格加锁解锁控制器 `一样，不做赘述。
