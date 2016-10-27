@@ -41,7 +41,9 @@
     LAContext * context = [[LAContext alloc] init];
     NSError * error;
     context.localizedCancelTitle = @"取消";//取消按钮
+    context.localizedFallbackTitle = @"验证登录密码";
     //判断是否支持
+    
     if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error]) {
         //弹出指纹识别界面
         [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
@@ -73,9 +75,7 @@
                                           self.result.reason = @"被系统取消";
                                           break;
                                           
-                                      case LAErrorTouchIDLockout:
-                                          self.result.reason = @"多次错误被锁定";
-                                          break;
+                                      
                                           
                                       case LAErrorAppCancel:
                                           self.result.reason = @"被(突如其来的)应用（电话）取消";//9.0我试了验证过程中电话进来返回的LAErrorSystemCancel错误码不是这个
@@ -91,7 +91,13 @@
     } else {
         self.result.resultSuccess = false;
         self.result.code = error.code;
+        NSLog(@"%ld",(long)error.code);
         switch (error.code) {
+                
+            case LAErrorTouchIDLockout:
+                self.result.reason = @"多次错误被锁定";
+                break;
+                
             case LAErrorPasscodeNotSet:
                 self.result.reason = @"在设置里面没有设置密码";
                 break;
@@ -113,9 +119,99 @@
         }
         NSLog(@"%@,%ld,%d",self.result.reason,(long)self.result.code,self.result.resultSuccess);
         self.touchCheck(self.result);
+        if (error.code == LAErrorTouchIDLockout) {
+            [self unLockTouchID];
+        }
     }
 
 }
+
+//指纹验证失败，调用输入密码界面
+- (void)unLockTouchID {
+    LAContext * context = [[LAContext alloc] init];
+    NSError * error;
+    context.localizedCancelTitle = @"取消";//取消按钮
+    context.localizedFallbackTitle = @"验证登录密码";
+    if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthentication error:&error]) {
+        //弹出指纹识别界面
+        [context evaluatePolicy:LAPolicyDeviceOwnerAuthentication
+                localizedReason:@"通过Home键验证已有手机指纹"//显示的消息
+                          reply:^(BOOL success, NSError * _Nullable error) {
+                              if (success) {
+                                  self.result.resultSuccess = true;
+                                  NSLog(@"%@,%ld,%d",self.result.reason,(long)self.result.code,self.result.resultSuccess);
+                                  self.touchCheck(self.result);
+                              } else {
+                                  //                                  a++;
+                                  
+                                  self.result.resultSuccess = false;
+                                  self.result.code = error.code;
+                                  switch (error.code) {
+                                      case LAErrorAuthenticationFailed:
+                                          self.result.reason = @"指纹不对";
+                                          break;
+                                          
+                                      case LAErrorUserCancel:
+                                          self.result.reason = @"点击了取消";
+                                          break;
+                                          
+                                      case LAErrorUserFallback:
+                                          self.result.reason = @"选择了输入密码";
+                                          break;
+                                          
+                                      case LAErrorSystemCancel:
+                                          self.result.reason = @"被系统取消";
+                                          break;
+                                          
+                                          
+                                          
+                                      case LAErrorAppCancel:
+                                          self.result.reason = @"被(突如其来的)应用（电话）取消";//9.0我试了验证过程中电话进来返回的LAErrorSystemCancel错误码不是这个
+                                          break;
+                                          
+                                      default:
+                                          break;
+                                  }
+                                  NSLog(@"%@,%ld,%d",self.result.reason,(long)self.result.code,self.result.resultSuccess);
+                                  self.touchCheck(self.result);
+                              }
+                          }];
+    } else {
+        self.result.resultSuccess = false;
+        self.result.code = error.code;
+        NSLog(@"%ld",(long)error.code);
+        switch (error.code) {
+                
+            case LAErrorTouchIDLockout:
+                self.result.reason = @"多次错误被锁定";
+                break;
+                
+            case LAErrorPasscodeNotSet:
+                self.result.reason = @"在设置里面没有设置密码";
+                break;
+                
+            case LAErrorTouchIDNotAvailable:
+                self.result.reason = @"设备不支持Touch ID";
+                break;
+                
+            case LAErrorTouchIDNotEnrolled:
+                self.result.reason = @"在设置里面没有设置TouchId 指纹";
+                break;
+                
+            case LAErrorInvalidContext:
+                self.result.reason = @"创建的指纹对象失效";
+                break;
+                
+            default:
+                break;
+        }
+        NSLog(@"%@,%ld,%d",self.result.reason,(long)self.result.code,self.result.resultSuccess);
+        self.touchCheck(self.result);
+        
+    }
+
+}
+
 
 - (void)touchIDChecken:(touchIDCheck)block {
     self.touchCheck = block;

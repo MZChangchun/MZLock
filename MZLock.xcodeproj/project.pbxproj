@@ -27,10 +27,6 @@
 		394D3D1D1DC1946F007F1291 /* Home_refresh_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 394D3D091DC1946F007F1291 /* Home_refresh_bg.png */; };
 		394D3D1E1DC1946F007F1291 /* Home_refresh_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 394D3D0A1DC1946F007F1291 /* Home_refresh_bg@2x.png */; };
 		394D3D1F1DC1946F007F1291 /* Home_refresh_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 394D3D0B1DC1946F007F1291 /* Home_refresh_bg@3x.png */; };
-		394D3D281DC19475007F1291 /* TouchIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 394D3D221DC19475007F1291 /* TouchIDManager.m */; };
-		394D3D291DC19475007F1291 /* TouchIDResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 394D3D241DC19475007F1291 /* TouchIDResult.m */; };
-		394D3D2A1DC19475007F1291 /* TouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394D3D261DC19475007F1291 /* TouchIDViewController.m */; };
-		394D3D2B1DC19475007F1291 /* TouchIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 394D3D271DC19475007F1291 /* TouchIDViewController.xib */; };
 		394D3D871DC19479007F1291 /* NumberCipherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 394D3D2E1DC19479007F1291 /* NumberCipherView.m */; };
 		394D3D881DC19479007F1291 /* NumberCipherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394D3D301DC19479007F1291 /* NumberCipherViewController.m */; };
 		394D3D891DC19479007F1291 /* NumberLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394D3D321DC19479007F1291 /* NumberLockViewController.m */; };
@@ -96,6 +92,10 @@
 		394D3DC51DC19479007F1291 /* butt_Norman_Numbutt9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 394D3D841DC19479007F1291 /* butt_Norman_Numbutt9@2x.png */; };
 		394D3DC61DC19479007F1291 /* butt_Norman_Numbutt9@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 394D3D851DC19479007F1291 /* butt_Norman_Numbutt9@3x.png */; };
 		394D3DC71DC19479007F1291 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 394D3D861DC19479007F1291 /* Contents.json */; };
+		394D3EA91DC1ADF7007F1291 /* TouchIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 394D3EA31DC1ADF7007F1291 /* TouchIDManager.m */; };
+		394D3EAA1DC1ADF7007F1291 /* TouchIDResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 394D3EA51DC1ADF7007F1291 /* TouchIDResult.m */; };
+		394D3EAB1DC1ADF7007F1291 /* TouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394D3EA71DC1ADF7007F1291 /* TouchIDViewController.m */; };
+		394D3EAC1DC1ADF7007F1291 /* TouchIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 394D3EA81DC1ADF7007F1291 /* TouchIDViewController.xib */; };
 		3970E1631D9CAB8800B443C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3970E1621D9CAB8800B443C5 /* main.m */; };
 		3970E1661D9CAB8800B443C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3970E1651D9CAB8800B443C5 /* AppDelegate.m */; };
 		3970E1691D9CAB8800B443C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3970E1681D9CAB8800B443C5 /* ViewController.m */; };
@@ -128,13 +128,6 @@
 		394D3D091DC1946F007F1291 /* Home_refresh_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home_refresh_bg.png; sourceTree = "<group>"; };
 		394D3D0A1DC1946F007F1291 /* Home_refresh_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home_refresh_bg@2x.png"; sourceTree = "<group>"; };
 		394D3D0B1DC1946F007F1291 /* Home_refresh_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home_refresh_bg@3x.png"; sourceTree = "<group>"; };
-		394D3D211DC19475007F1291 /* TouchIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDManager.h; sourceTree = "<group>"; };
-		394D3D221DC19475007F1291 /* TouchIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDManager.m; sourceTree = "<group>"; };
-		394D3D231DC19475007F1291 /* TouchIDResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDResult.h; sourceTree = "<group>"; };
-		394D3D241DC19475007F1291 /* TouchIDResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDResult.m; sourceTree = "<group>"; };
-		394D3D251DC19475007F1291 /* TouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDViewController.h; sourceTree = "<group>"; };
-		394D3D261DC19475007F1291 /* TouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDViewController.m; sourceTree = "<group>"; };
-		394D3D271DC19475007F1291 /* TouchIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchIDViewController.xib; sourceTree = "<group>"; };
 		394D3D2D1DC19479007F1291 /* NumberCipherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberCipherView.h; sourceTree = "<group>"; };
 		394D3D2E1DC19479007F1291 /* NumberCipherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberCipherView.m; sourceTree = "<group>"; };
 		394D3D2F1DC19479007F1291 /* NumberCipherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberCipherViewController.h; sourceTree = "<group>"; };
@@ -204,6 +197,13 @@
 		394D3D841DC19479007F1291 /* butt_Norman_Numbutt9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "butt_Norman_Numbutt9@2x.png"; sourceTree = "<group>"; };
 		394D3D851DC19479007F1291 /* butt_Norman_Numbutt9@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "butt_Norman_Numbutt9@3x.png"; sourceTree = "<group>"; };
 		394D3D861DC19479007F1291 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		394D3EA21DC1ADF7007F1291 /* TouchIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDManager.h; sourceTree = "<group>"; };
+		394D3EA31DC1ADF7007F1291 /* TouchIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDManager.m; sourceTree = "<group>"; };
+		394D3EA41DC1ADF7007F1291 /* TouchIDResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDResult.h; sourceTree = "<group>"; };
+		394D3EA51DC1ADF7007F1291 /* TouchIDResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDResult.m; sourceTree = "<group>"; };
+		394D3EA61DC1ADF7007F1291 /* TouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDViewController.h; sourceTree = "<group>"; };
+		394D3EA71DC1ADF7007F1291 /* TouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDViewController.m; sourceTree = "<group>"; };
+		394D3EA81DC1ADF7007F1291 /* TouchIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchIDViewController.xib; sourceTree = "<group>"; };
 		3970E15E1D9CAB8700B443C5 /* MZLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3970E1621D9CAB8800B443C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3970E1641D9CAB8800B443C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -295,20 +295,6 @@
 				394D3D0B1DC1946F007F1291 /* Home_refresh_bg@3x.png */,
 			);
 			path = Home_refresh_bg.imageset;
-			sourceTree = "<group>";
-		};
-		394D3D201DC19475007F1291 /* TouchIDLock */ = {
-			isa = PBXGroup;
-			children = (
-				394D3D211DC19475007F1291 /* TouchIDManager.h */,
-				394D3D221DC19475007F1291 /* TouchIDManager.m */,
-				394D3D231DC19475007F1291 /* TouchIDResult.h */,
-				394D3D241DC19475007F1291 /* TouchIDResult.m */,
-				394D3D251DC19475007F1291 /* TouchIDViewController.h */,
-				394D3D261DC19475007F1291 /* TouchIDViewController.m */,
-				394D3D271DC19475007F1291 /* TouchIDViewController.xib */,
-			);
-			path = TouchIDLock;
 			sourceTree = "<group>";
 		};
 		394D3D2C1DC19479007F1291 /* NumberLock */ = {
@@ -555,6 +541,20 @@
 			path = butt_Norman_Numbutt9.imageset;
 			sourceTree = "<group>";
 		};
+		394D3EA11DC1ADF7007F1291 /* TouchIDLock */ = {
+			isa = PBXGroup;
+			children = (
+				394D3EA21DC1ADF7007F1291 /* TouchIDManager.h */,
+				394D3EA31DC1ADF7007F1291 /* TouchIDManager.m */,
+				394D3EA41DC1ADF7007F1291 /* TouchIDResult.h */,
+				394D3EA51DC1ADF7007F1291 /* TouchIDResult.m */,
+				394D3EA61DC1ADF7007F1291 /* TouchIDViewController.h */,
+				394D3EA71DC1ADF7007F1291 /* TouchIDViewController.m */,
+				394D3EA81DC1ADF7007F1291 /* TouchIDViewController.xib */,
+			);
+			path = TouchIDLock;
+			sourceTree = "<group>";
+		};
 		3970E1551D9CAB8700B443C5 = {
 			isa = PBXGroup;
 			children = (
@@ -575,7 +575,7 @@
 			isa = PBXGroup;
 			children = (
 				394D3CEF1DC1946F007F1291 /* DrawLock */,
-				394D3D201DC19475007F1291 /* TouchIDLock */,
+				394D3EA11DC1ADF7007F1291 /* TouchIDLock */,
 				394D3D2C1DC19479007F1291 /* NumberLock */,
 				3970E1641D9CAB8800B443C5 /* AppDelegate.h */,
 				3970E1651D9CAB8800B443C5 /* AppDelegate.m */,
@@ -698,7 +698,6 @@
 				394D3DA21DC19479007F1291 /* butt_Click_Number7@3x.png in Resources */,
 				394D3D1D1DC1946F007F1291 /* Home_refresh_bg.png in Resources */,
 				3970E1711D9CAB8900B443C5 /* LaunchScreen.storyboard in Resources */,
-				394D3D2B1DC19475007F1291 /* TouchIDViewController.xib in Resources */,
 				394D3DC51DC19479007F1291 /* butt_Norman_Numbutt9@2x.png in Resources */,
 				394D3DB11DC19479007F1291 /* butt_Norman_Numbutt2@3x.png in Resources */,
 				394D3D931DC19479007F1291 /* butt_Click_Number2@3x.png in Resources */,
@@ -709,6 +708,7 @@
 				394D3DAA1DC19479007F1291 /* butt_Norman_Numbutt1@2x.png in Resources */,
 				394D3DA81DC19479007F1291 /* butt_Click_Number9@3x.png in Resources */,
 				394D3DA61DC19479007F1291 /* Contents.json in Resources */,
+				394D3EAC1DC1ADF7007F1291 /* TouchIDViewController.xib in Resources */,
 				394D3D8D1DC19479007F1291 /* butt_Click_Number1@3x.png in Resources */,
 				394D3DB01DC19479007F1291 /* butt_Norman_Numbutt2@2x.png in Resources */,
 				394D3D971DC19479007F1291 /* Contents.json in Resources */,
@@ -750,17 +750,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3970E1691D9CAB8800B443C5 /* ViewController.m in Sources */,
-				394D3D291DC19475007F1291 /* TouchIDResult.m in Sources */,
+				394D3EAA1DC1ADF7007F1291 /* TouchIDResult.m in Sources */,
 				394D3D871DC19479007F1291 /* NumberCipherView.m in Sources */,
 				394D3D0E1DC1946F007F1291 /* MZLockView.m in Sources */,
-				394D3D281DC19475007F1291 /* TouchIDManager.m in Sources */,
 				394D3D0F1DC1946F007F1291 /* MZLockViewController.m in Sources */,
 				394D3D891DC19479007F1291 /* NumberLockViewController.m in Sources */,
 				394D3D8B1DC19479007F1291 /* PageHeadView.m in Sources */,
+				394D3EA91DC1ADF7007F1291 /* TouchIDManager.m in Sources */,
 				3970E1661D9CAB8800B443C5 /* AppDelegate.m in Sources */,
-				394D3D2A1DC19475007F1291 /* TouchIDViewController.m in Sources */,
 				3970E1631D9CAB8800B443C5 /* main.m in Sources */,
 				394D3D0C1DC1946F007F1291 /* LockViewController.m in Sources */,
+				394D3EAB1DC1ADF7007F1291 /* TouchIDViewController.m in Sources */,
 				394D3D881DC19479007F1291 /* NumberCipherViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
