@@ -40,12 +40,12 @@
     }
     LAContext * context = [[LAContext alloc] init];
     NSError * error;
-    context.localizedCancelTitle = @"我要授权";//取消按钮
+    context.localizedCancelTitle = @"取消";//取消按钮
     //判断是否支持
     if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error]) {
         //弹出指纹识别界面
         [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
-                localizedReason:@"你妹的"//显示的消息
+                localizedReason:@"通过Home键验证已有手机指纹"//显示的消息
                           reply:^(BOOL success, NSError * _Nullable error) {
                               if (success) {
                                   self.result.resultSuccess = true;
